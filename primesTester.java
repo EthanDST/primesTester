@@ -10,7 +10,8 @@ class primesTester {
         if (n <= 1) 
             return false; 
        
-        // checks factors from 2 to n-1
+        // need only check factors from 2 up to square root of n
+        // for simpliciy test here up to n
         for (int i = 2; i < n; i++) 
             if (n % i == 0) 
                 return false; 
