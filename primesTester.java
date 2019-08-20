@@ -1,16 +1,16 @@
-import java.util.*; 
+//program to test if the input is prime
+import java.util.*;  //this is an important package in Java
   
 class primesTester { 
       
-    // function check whether a number  
-    // is prime or not 
+    // first, a function to check if a number n is prime or not 
     static boolean isPrime(int n) 
     { 
-        // Corner case 
+        // case is n is 1 or non-positive 
         if (n <= 1) 
             return false; 
        
-        // Check from 2 to n-1 
+        // checks factors from 2 to n-1
         for (int i = 2; i < n; i++) 
             if (n % i == 0) 
                 return false; 
@@ -18,7 +18,7 @@ class primesTester {
         return true; 
     } 
       
-    /* Driver program  */
+    // calls the created function to test the input
     public static void main(String[] args)  
     { 
          if(isPrime(11))  
